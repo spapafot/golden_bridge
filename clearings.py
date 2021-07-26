@@ -16,7 +16,7 @@ num_pages = pdf_file.getNumPages()
 page_breaks = []
 start_page = 0
 EMAIL = "ashipsagency@gmail.com"
-EMAIL_PASS = "Theo3954*-*"
+EMAIL_PASS = "*"
 file_list = []
 
 data = f"Αγαπητοί συνεργάτες, \n\n" \

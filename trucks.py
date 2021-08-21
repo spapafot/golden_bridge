@@ -31,12 +31,6 @@ data[1] = data[1].str[1:]
 for i in range(3, 8):
     data[i] = data[i].str.replace(",", ".").astype(float)
 
-data_ = data[data[1].str.contains("11/07")]
-
-x = data.groupby([4])[4].count()
-print(x)
-y = data[5].count()
-print(y)
 
 with pd.ExcelWriter("trucks.xlsx", "xlsxwriter") as writer:
     pd.DataFrame(data).to_excel(writer, index=None)

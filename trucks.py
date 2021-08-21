@@ -31,7 +31,6 @@ data[1] = data[1].str[1:]
 for i in range(3, 8):
     data[i] = data[i].str.replace(",", ".").astype(float)
 
-
 with pd.ExcelWriter("trucks.xlsx", "xlsxwriter") as writer:
     pd.DataFrame(data).to_excel(writer, index=None)
 
